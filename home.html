@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UrCareGuide - Home</title>
+  <!-- Add your CSS stylesheets -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    #homePage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+    }
+    .features {
+      background-color: #f7f7f7;
+      padding: 20px;
+      text-align: center;
+    }
+    .features h2 {
+      color: #4a90e2;
+    }
+    .features .feature {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    .features .feature .title {
+      color: #4a90e2;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .features .feature .description {
+      margin-top: 10px;
+    }
+    .features .top-left {
+      align-self: flex-start;
+    }
+    .features .top-right {
+      align-self: flex-end;
+    }
+    .features .bottom-left {
+      align-self: flex-start;
+    }
+    .features .bottom-right {
+      align-self: flex-end;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div id="homePage">
+    <div class="features">
+      <h2>Features About UrCareGuide</h2>
+      
+      <div class="feature top-left">
+        <h3 class="title">Privacy and Security</h3>
+        <p class="description">FInd the right Specialist with our chatbot.</p>
+      </div>
+      
+      <div class="feature top-right">
+        <h3 class="title">Saving Timeand effort </h3>
+        <p class="description">save time and effort of traditional searching with our new technology .</p>
+      </div>
+      
+      <div class="feature bottom-left">
+        <h3 class="title">Variaty of choices  </h3>
+        <p class="description">we cover many symptoms to get the right specialty .</p>
+      </div>
+      
+      <div class="feature bottom-right"">
+        <h3 class="title">Convenicnce and speed </h3>
+        <p class="description">with our pre-trained chatbot you can get the specialty fast  .</p>
+      </div>
+    </div>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-title="UrCareGuide"
+      agent-id="d5126811-0060-4e52-9258-f53976e44f64"
+      language-code="en"
+    ></df-messenger>
+  </div>
+</body>
+</html>
+
+
